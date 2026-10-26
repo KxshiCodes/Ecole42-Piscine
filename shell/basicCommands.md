@@ -14,7 +14,7 @@ A brief reference for commonly used Linux commands.
 - `pwd` — Displays the current directory.
 - `mkdir dir` — Creates a directory.
 - `rm file` — Removes a file.
-- `rm -f file` — Force-removes a file.
+- `rm -f file` — Force removes a file.
 - `rm -r dir` — Removes a directory and its contents.
 - `cp file1 file2` — Copies a file.
 - `mv file1 file2` — Moves or renames a file.
