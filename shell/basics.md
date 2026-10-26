@@ -63,6 +63,22 @@
 
 ## COMPRESSING
 
+- tar cf file.tar files - tar files into file.tar 
+- tar xf file.tar - untar into current directory
+- tar tf file.tar - show contents of archive
+
+options:
+c - create archive
+t - table of contents
+x - extract
+z - use zip/gzip
+f - specify filename
+j - bzip2 compression
+w - ask for comfirmation
+k - do not overwrite
+T - files from file
+v - verbose
+
 ## PERMISSIONS
 
 - chmod octal file - change permissions of file
