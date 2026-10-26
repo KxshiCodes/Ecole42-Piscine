@@ -1,98 +1,103 @@
 # Basic Linux Commands
 
-## FILES & NAVIGATING
+## FILES & NAVIGATION
 
-- ls - Lists files and directories in the current directory.
-- ls -l - Long-format listing, including permissions, owner, size, and modification time.
-- ls -la - Long listing including hidden entries.
-- cd dir - Changes into directory dir.
-- cd .. - Space required. Moves to the parent directory.
-- cd ../dir - Space required after cd. Goes to directory dir inside the parent directory.
-- cd - Returns to home directory.
-- pwd - Prints the current working directory.
-- mkdir dir - Create a directory.
-- rm file - Removes a file; usually asks no confirmation.
-- rm -f file - Force-removes files without prompting. It does not remove a non-empty directory.
-- rm -r dir - Recursively removes a directory and its contents.
-- cp file1 file2 - Copy file1 to file2
-- mv file1 file2 - Renames a file or moves it, depending on the destination.
-- mv file1 dir/file2 - Moves and renames the file to file2 inside dir.
-- touch file - Creates an empty file if it doesn't exist, or updates its timestamps if it does.
-- cat file - Prints a file's contents to standard output. 
-- cat › file - Reads standard input into a file, overwriting its previous contents.
-- cat » file - Reads standard input and appends it to a file.
-- tail -f file - Follows new lines added to a file, useful for monitoring logs.
+- `ls` — Lists files and directories.
+- `ls -l` — Displays a detailed listing.
+- `ls -la` — Displays a detailed listing, including hidden files.
+- `cd dir` — Changes to directory `dir`.
+- `cd ..` — Moves to the parent directory.
+- `cd ../dir` — Moves to `dir` inside the parent directory.
+- `cd` — Returns to the home directory.
+- `pwd` — Displays the current directory.
+- `mkdir dir` — Creates a directory.
+- `rm file` — Removes a file.
+- `rm -f file` — Force-removes a file.
+- `rm -r dir` — Removes a directory and its contents.
+- `cp file1 file2` — Copies a file.
+- `mv file1 file2` — Moves or renames a file.
+- `mv file1 dir/file2` — Moves and renames a file.
+- `touch file` — Creates a file or updates its timestamps.
+- `cat file` — Displays file contents.
+- `cat > file` — Writes input to a file, overwriting existing contents.
+- `cat >> file` — Appends input to a file.
+- `tail -f file` — Follows a file as new lines are added.
 
 ## NETWORKING
 
-- ping host - ping host 
-- whois domain - get whois for domain 
-- dig domain - get DNS for domain 
-- dig -x host - reserve lookup host
-- wget file - download file 
-- wget -c file - continue stopped download 
-- wget -r url - recurively download files from url 
-- curl url - outputs the webpage from url 
-- curl-o meh.html url - writes the page to meh.html 
-- ssh user @host - connect to host as user 
-- ssh-p port user@host - connect using port
-- ssh-D user@host - connect & use bind port
+- `ping host` — Tests connectivity to a host.
+- `whois domain` — Retrieves domain registration information.
+- `dig domain` — Queries DNS records.
+- `dig -x IP_ADDRESS` — Performs a reverse DNS lookup.
+- `wget URL` — Downloads a file.
+- `wget -c URL` — Resumes an interrupted download.
+- `wget -r URL` — Recursively downloads linked content.
+- `curl URL` — Displays the server's response.
+- `curl -o file.html URL` — Saves the response to a file.
+- `ssh user@host` — Connects to a remote host.
+- `ssh -p PORT user@host` — Connects using a specified SSH port.
+- `ssh -D PORT user@host` — Creates a local SOCKS proxy through SSH.
 
 ## PROCESSES
 
-- ps - display currently active processes
-- ps aux - detailed outputs 
-- kill pid - kill process with process id (pid)
-- killall proc - kill all processes named proc
+- `ps` — Displays processes associated with the current terminal.
+- `ps aux` — Lists running processes with detailed information.
+- `kill PID` — Requests termination of a process.
+- `killall process` — Sends a signal to processes matching a name.
 
-## SYSTEM INFO
+## SYSTEM INFORMATION
 
-- date - show current date/time
-- uptime - show uptime
-- whoami - who you're logged in as
-- w - display who is online 
-- cat/proc/cpuinfo - display cpu info 
-- cat/proc/meminfo - memory info 
-- free - show memory and swap usage 
-- du - show directory space usage 
-- du-sh - displays readable sizes in GB 
-- df - show disk usage
-- uname -a - show karnel config
+- `date` — Displays the current date and time.
+- `uptime` — Displays system uptime.
+- `whoami` — Displays the current username.
+- `w` — Displays logged-in users and their activity.
+- `cat /proc/cpuinfo` — Displays CPU information.
+- `cat /proc/meminfo` — Displays memory information.
+- `free` — Displays memory and swap usage.
+- `du` — Displays disk space used by files and directories.
+- `du -sh dir` — Displays a directory's total size in human-readable units.
+- `df` — Displays filesystem disk usage.
+- `uname -a` — Displays system and kernel information.
 
-## COMPRESSING
+## ARCHIVING & COMPRESSION
 
-- tar cf file.tar files - tar files into file.tar 
-- tar xf file.tar - untar into current directory
-- tar tf file.tar - show contents of archive
+- `tar cf file.tar files` — Creates an uncompressed archive.
+- `tar xf file.tar` — Extracts an archive.
+- `tar tf file.tar` — Lists archive contents.
+- `tar czf file.tar.gz files` — Creates a gzip-compressed archive.
 
-options:
-c - create archive
-t - table of contents
-x - extract
-z - use zip/gzip
-f - specify filename
-j - bzip2 compression
-w - ask for comfirmation
-k - do not overwrite
-T - files from file
-v - verbose
+### Common `tar` options
+
+- `c` — Create an archive.
+- `t` — List archive contents.
+- `x` — Extract an archive.
+- `z` — Use gzip compression.
+- `f` — Specify the archive filename.
+- `j` — Use bzip2 compression.
+- `w` — Ask for confirmation.
+- `k` — Avoid overwriting existing files.
+- `T` — Read filenames from a file.
+- `v` — Display detailed output.
 
 ## PERMISSIONS
 
-- chmod octal file - change permissions of file
+- `chmod OCTAL file` — Changes file permissions.
 
-4 - read (r)
-2 - write (w)
-1 - execute (x) 
+### Permission values
 
-order: owner/group/world
+- `4` — Read (`r`).
+- `2` — Write (`w`).
+- `1` — Execute (`x`).
 
-- chmod 777 - rwx for everyone
-- chmod 755 - rw for owner, rx for group world
+Order: **owner / group / others**
 
-## SOME OTHERS
+- `chmod 777 file` — Gives everyone read, write and execute permissions.
+- `chmod 755 file` — Gives the owner `rwx` and the group and others `r-x`.
 
-- grep pattern files - search in files for pattern 
-- grep -r pattern dir - search for pattern recursively in dir - locate file - find all instances of file 
-- whereis app - show possible locations of app
-- man command - show manual page for command
+## OTHER COMMANDS
+
+- `grep 'pattern' file` — Searches a file for a pattern.
+- `grep -r 'pattern' dir` — Searches recursively for a pattern.
+- `locate filename` — Searches an indexed database for file paths.
+- `whereis app` — Displays possible locations of an application.
+- `man command` — Opens the manual page for a command.
