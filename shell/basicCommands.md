@@ -30,18 +30,18 @@ tail -f file        # Follows a file as new lines are added.
 ## NETWORKING
 
 ```bash
-- `ping host`                   # Tests connectivity to a host.
-- `whois domain`                   # Retrieves domain registration information.
-- `dig domain`                   # Queries DNS records.
-- `dig -x IP_ADDRESS`                   # Performs a reverse DNS lookup.
-- `wget URL`                   # Downloads a file.
-- `wget -c URL`                   # Resumes an interrupted download.
-- `wget -r URL`                   # Recursively downloads linked content.
-- `curl URL`                   # Displays the server's response.
-- `curl -o file.html URL`                   # Saves the response to a file.
-- `ssh user@host`                   # Connects to a remote host.
-- `ssh -p PORT user@host`                   # Connects using a specified SSH port.
-- `ssh -D PORT user@host`                   # Creates a local SOCKS proxy through SSH.
+ping host               # Tests connectivity to a host.
+whois domain            # Retrieves domain registration information.
+dig domain              # Queries DNS records.
+dig -x IP_ADDRESS       # Performs a reverse DNS lookup.
+wget URL                # Downloads a file.
+wget -c URL             # Resumes an interrupted download.
+wget -r URL             # Recursively downloads linked content.
+curl URL                # Displays the server's response.
+curl -o file.html URL   # Saves the response to a file.
+ssh user@host           # Connects to a remote host.
+ssh -p PORT user@host   # Connects using a specified SSH port.
+ssh -D PORT user@host   # Creates a local SOCKS proxy through SSH.
 ```
 
 ## PROCESSES
