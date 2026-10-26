@@ -76,38 +76,40 @@ tar cf file.tar files        # Creates an uncompressed archive.
 tar xf file.tar              # Extracts an archive.
 tar tf file.tar              # Lists archive contents.
 tar czf file.tar.gz files    # Creates a gzip-compressed archive.
+
+Common `tar` options
+
+c    # Create an archive.
+t    # List archive contents.
+x    # Extract an archive.
+z    # Use gzip compression.
+f    # Specify the archive filename.
+j    # Use bzip2 compression.
+w    # Ask for confirmation.
+k    # Avoid overwriting existing files.
+T    # Read filenames from a file.
+v    # Display detailed output.
 ```
-
-### Common `tar` options
-
-- `c`                   # Create an archive.
-- `t`                   # List archive contents.
-- `x`                   # Extract an archive.
-- `z`                   # Use gzip compression.
-- `f`                   # Specify the archive filename.
-- `j`                   # Use bzip2 compression.
-- `w`                   # Ask for confirmation.
-- `k`                   # Avoid overwriting existing files.
-- `T`                   # Read filenames from a file.
-- `v`                   # Display detailed output.
 
 ## PERMISSIONS
 
 ```bash
-chmod OCTAL file        # Changes file permissions.
+chmod OCTAL file    # Changes file permissions.
+
+Permission values
+
+4    # Read (`r`).
+2    # Write (`w`).
+1    # Execute (`x`).
 ```
 
-### Permission values
 
-- `4`                   # Read (`r`).
-- `2`                   # Write (`w`).
-- `1`                   # Execute (`x`).
 
 Order: **owner / group / others**
 
 ```bash
-chmod 777 file           # Gives everyone read, write and execute permissions.
-chmod 755 file           # Gives the owner `rwx` and the group and others `r-x`.
+chmod 777 file     # Gives everyone read, write and execute permissions.
+chmod 755 file     # Gives the owner `rwx` and the group and others `r-x`.
 ```
 
 ## OTHER COMMANDS
