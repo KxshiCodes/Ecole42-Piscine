@@ -76,9 +76,11 @@ tar cf file.tar files        # Creates an uncompressed archive.
 tar xf file.tar              # Extracts an archive.
 tar tf file.tar              # Lists archive contents.
 tar czf file.tar.gz files    # Creates a gzip-compressed archive.
+```
 
-Common `tar` options
+**Common `tar` options**
 
+```bash
 c    # Create an archive.
 t    # List archive contents.
 x    # Extract an archive.
@@ -95,9 +97,11 @@ v    # Display detailed output.
 
 ```bash
 chmod OCTAL file    # Changes file permissions.
+```
 
-Permission values
+**Permission values**
 
+```bash
 4    # Read (`r`).
 2    # Write (`w`).
 1    # Execute (`x`).
