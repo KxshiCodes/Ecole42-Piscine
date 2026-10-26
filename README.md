@@ -1,4 +1,4 @@
-# 42 Piscine Prep
+# 42 Piscine Starter Kit
 
 This repository supports my learning during the **Piscine** and aims to help my fellow students along the way.
 
