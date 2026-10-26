@@ -1,4 +1,6 @@
-# Basic Linux Commands
+# Basic Linux Commands - Cheat Sheet
+
+A brief reference for commonly used Linux commands.
 
 ## FILES & NAVIGATION
 
