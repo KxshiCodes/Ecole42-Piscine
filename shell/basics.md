@@ -66,3 +66,8 @@
 ## PERMISSIONS
 
 ## SOME OTHERS
+
+- grep pattern files - search in files for pattern 
+- grep -r pattern dir - search for pattern recursively in dir - locate file - find all instances of file 
+- whereis app - show possible locations of app
+- man command - show manual page for command
