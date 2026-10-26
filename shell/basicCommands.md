@@ -47,10 +47,10 @@ ssh -D PORT user@host   # Creates a local SOCKS proxy through SSH.
 ## PROCESSES
 
 ```bash
-- `ps`                   # Displays processes associated with the current terminal.
-- `ps aux`                   # Lists running processes with detailed information.
-- `kill PID`                   # Requests termination of a process.
-- `killall process`                   # Sends a signal to processes matching a name.
+ps                  # Displays processes associated with the current terminal.
+ps aux              # Lists running processes with detailed information.
+kill PID            # Requests termination of a process.
+killall process     # Sends a signal to processes matching a name.
 ```
 
 ## SYSTEM INFORMATION
