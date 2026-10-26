@@ -42,6 +42,11 @@
 
 ## PROCESSES
 
+- ps - display currently active processes
+- ps aux - detailed outputs 
+- kill pid - kill process with process id (pid)
+- killall proc - kill all processes named proc
+
 ## SYSTEM INFO
 
 ## COMPRESSING
