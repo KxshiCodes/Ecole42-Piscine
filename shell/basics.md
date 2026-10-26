@@ -2,28 +2,26 @@
 
 ## FILES & NAVIGATING
 
-- ls - directory listing (list cill files/folders on current dir)
-- ls -l - formatted listing 
-- ls -la - formatted listing including hidden files 
-- cd dir - change directory to dir (dir will be directory name) 
-- cd.. - change to parent directory 
-- cd../dir - change to dir in parent directory 
-- cd - change to home directory 
-- pwd - show current directory 
-- mkdir dir - create a directory dir
-- rm file - delete file 
-- rm -f dir - force remove file 
-- rm -r dir - delete directory dir
-- rm -rf dir - remove directory dir 
-- rm -rf/ - launch some neuclear bombs targeting your system
-- cp file1 file2 - copy file1 to file2
-- mv file1 file2 - rename file1 to file 2 
-- mv file1 dir/file2 - move file1 to dir as file2 
-- touch file - create or update file 
-- cat file - output contents of file 
-- cat › file - write standard input into file 
-- cat » file - append standard input into file
-- tail-f file - output contents of file as it grows
+- ls - Lists files and directories in the current directory.
+- ls -l - Long-format listing, including permissions, owner, size, and modification time.
+- ls -la - Long listing including hidden entries.
+- cd dir - Changes into directory dir.
+- cd .. - Space required. Moves to the parent directory.
+- cd ../dir - Space required after cd. Goes to directory dir inside the parent directory.
+- cd - Returns to home directory.
+- pwd - Prints the current working directory.
+- mkdir dir - Create a directory.
+- rm file - Removes a file; usually asks no confirmation.
+- rm -f file - Force-removes files without prompting. It does not remove a non-empty directory.
+- rm -r dir - Recursively removes a directory and its contents.
+- cp file1 file2 - Copy file1 to file2
+- mv file1 file2 - Renames a file or moves it, depending on the destination.
+- mv file1 dir/file2 - Moves and renames the file to file2 inside dir.
+- touch file - Creates an empty file if it doesn't exist, or updates its timestamps if it does.
+- cat file - Prints a file's contents to standard output. 
+- cat › file - Reads standard input into a file, overwriting its previous contents.
+- cat » file - Reads standard input and appends it to a file.
+- tail -f file - Follows new lines added to a file, useful for monitoring logs.
 
 ## NETWORKING
 
