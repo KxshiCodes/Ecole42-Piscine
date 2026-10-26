@@ -49,6 +49,18 @@
 
 ## SYSTEM INFO
 
+- date - show current date/time
+- uptime - show uptime
+- whoami - who you're logged in as
+- w - display who is online 
+- cat/proc/cpuinfo - display cpu info 
+- cat/proc/meminfo - memory info 
+- free - show memory and swap usage 
+- du - show directory space usage 
+- du-sh - displays readable sizes in GB 
+- df - show disk usage
+- uname -a - show karnel config
+
 ## COMPRESSING
 
 ## PERMISSIONS
