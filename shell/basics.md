@@ -65,6 +65,17 @@
 
 ## PERMISSIONS
 
+- chmod octal file - change permissions of file
+
+4 - read (r)
+2 - write (w)
+1 - execute (x) 
+
+order: owner/group/world
+
+- chmod 777 - rwx for everyone
+- chmod 755 - rw for owner, rx for group world
+
 ## SOME OTHERS
 
 - grep pattern files - search in files for pattern 
