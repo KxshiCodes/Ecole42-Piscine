@@ -25,12 +25,6 @@ My advice:
 
 **Understand → Implement → Experiment → Build → Reflect**
 
-- **Understand:** Develop a clear mental model of the concept and why it works.
-- **Implement:** Turn that understanding into working code.
-- **Experiment:** Explore edge cases, limitations and alternative approaches.
-- **Build:** Apply what I've learnt to practical problems and projects.
-- **Reflect:** Record key lessons, recognise mistakes and identify areas for improvement.
-
 ## 📈 Progress
 
 I track milestones, lessons learnt and next steps in [LOG.md](LOG.md).
