@@ -46,11 +46,9 @@ My advice:
 ## 📈 Progress
 
 I track milestones, lessons learnt and next steps in [LOG.md](LOG.md).
-
 Progress is measured by what I can understand, implement, test, explain and improve.
 
 ## 🎯 Goal
 
 Keep swimming, keep coding and keep learning.
-
 **Consistency over perfection. Progress over stagnation. Learning by doing.**
