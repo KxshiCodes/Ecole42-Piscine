@@ -12,7 +12,7 @@ You might find that the exercises you once skipped are no longer so difficult.
 
 **The goal isn't perfection. It's progress.**
 
-## 🎓 No Cheating — Choose Learning Instead
+## 🎓 No Cheating. Choose Learning Instead
 
 Here is the million-dollar question:
 
