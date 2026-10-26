@@ -72,10 +72,10 @@ uname -a             # Displays system and kernel information.
 ## ARCHIVING & COMPRESSION
 
 ```bash
-- `tar cf file.tar files`                   # Creates an uncompressed archive.
-- `tar xf file.tar`                   # Extracts an archive.
-- `tar tf file.tar`                   # Lists archive contents.
-- `tar czf file.tar.gz files`                   # Creates a gzip-compressed archive.
+tar cf file.tar files        # Creates an uncompressed archive.
+tar xf file.tar              # Extracts an archive.
+tar tf file.tar              # Lists archive contents.
+tar czf file.tar.gz files    # Creates a gzip-compressed archive.
 ```
 
 ### Common `tar` options
@@ -94,7 +94,7 @@ uname -a             # Displays system and kernel information.
 ## PERMISSIONS
 
 ```bash
-- `chmod OCTAL file`                   # Changes file permissions.
+chmod OCTAL file        # Changes file permissions.
 ```
 
 ### Permission values
@@ -106,16 +106,16 @@ uname -a             # Displays system and kernel information.
 Order: **owner / group / others**
 
 ```bash
-chmod 777 file                  # Gives everyone read, write and execute permissions.
-chmod 755 file             # Gives the owner `rwx` and the group and others `r-x`.
+chmod 777 file           # Gives everyone read, write and execute permissions.
+chmod 755 file           # Gives the owner `rwx` and the group and others `r-x`.
 ```
 
 ## OTHER COMMANDS
 
 ```bash
-grep 'pattern' file                   # Searches a file for a pattern.
-grep -r 'pattern' dir                   # Searches recursively for a pattern.
-locate filename                   # Searches an indexed database for file paths.
-whereis app                # Displays possible locations of an application.
-man command                   # Opens the manual page for a command.
+grep 'pattern' file      # Searches a file for a pattern.
+grep -r 'pattern' dir    # Searches recursively for a pattern.
+locate filename          # Searches an indexed database for file paths.
+whereis app              # Displays possible locations of an application.
+man command              # Opens the manual page for a command.
 ```
