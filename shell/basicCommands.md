@@ -56,17 +56,17 @@ killall process     # Sends a signal to processes matching a name.
 ## SYSTEM INFORMATION
 
 ```bash
-- `date`                   # Displays the current date and time.
-- `uptime`                   # Displays system uptime.
-- `whoami`                   # Displays the current username.
-- `w`                   # Displays logged-in users and their activity.
-- `cat /proc/cpuinfo`                   # Displays CPU information.
-- `cat /proc/meminfo`                   # Displays memory information.
-- `free`                   # Displays memory and swap usage.
-- `du`                   # Displays disk space used by files and directories.
-- `du -sh dir`                   # Displays a directory's total size in human-readable units.
-- `df`                   # Displays filesystem disk usage.
-- `uname -a`                   # Displays system and kernel information.
+date                 # Displays the current date and time.
+uptime               # Displays system uptime.
+whoami               # Displays the current username.
+w                    # Displays logged-in users and their activity.
+cat /proc/cpuinfo    # Displays CPU information.
+cat /proc/meminfo    # Displays memory information.
+free                 # Displays memory and swap usage.
+du                   # Displays disk space used by files and directories.
+du -sh dir           # Displays a directory's total size in human-readable units.
+df                   # Displays filesystem disk usage.
+uname -a             # Displays system and kernel information.
 ```
 
 ## ARCHIVING & COMPRESSION
