@@ -10,7 +10,7 @@ int main(void){
   // Read name
   printf("Enter your full name:  "); 
   fgets(fullName, sizeof(fullName), stdin);
-  printf("Hello, %s", fullName);
+  printf("Hello, %s", fullName); // Reads a whole line, including spaces.
 
   // Read age
   printf("Enter your age: "); 
