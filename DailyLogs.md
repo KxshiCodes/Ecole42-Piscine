@@ -9,9 +9,9 @@ A simple record of my progress, discoveries, and growth during the **Piscine**.
 #### What I've learned
 
 - I learned to use Shell/Unix to navigate directories, create and move files, permissions, pipes, redirection, ```grep, find, cat, ls, chmod, man```
-- I learned the fundamental building blocks of C.
+- I learned the fundamental building blocks of C programming language.
 - I learned to use Git to ```clone, add, commit, status, log, diff```, branches and pushing to a remote.
-- I learned to compile with: 
+- I learned to compile a C program with: 
 ```bash
 cc -Wall -Wextra -Werror **filename.c** -o **filename***
 ./**filename***
