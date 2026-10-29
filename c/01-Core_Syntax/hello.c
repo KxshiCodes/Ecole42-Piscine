@@ -1,4 +1,4 @@
-#include <stdio.h> // Header file
+#include <stdio.h>
 
 int main(void)
 {
