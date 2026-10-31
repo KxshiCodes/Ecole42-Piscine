@@ -2,6 +2,16 @@
 
 A brief reference for commonly used Git commands.
 
+## Typical Workflow
+
+```bash
+git status
+git add .
+git commit -m "Describe your changes"
+git pull
+git push
+```
+
 ## 1. Configuration
 
 ```bash
@@ -60,16 +70,6 @@ git reset --soft HEAD~1      # Undo the last commit, keeping changes staged
 ```
 
 > **Warning:** `git restore` can discard uncommitted changes. Use `git reset` carefully, especially on shared branches.
-
-## 7. Typical Workflow
-
-```bash
-git status
-git add .
-git commit -m "Describe your changes"
-git pull
-git push
-```
 
 ## Official Reference
 
